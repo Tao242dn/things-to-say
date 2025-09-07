@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Things to say</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#ff9aba" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  
+    <div class="chosen-banner" id="chosenBanner" hidden>
+      <span id="chosenText">Mình có một tối dành cho nhau…</span>
+    </div>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>Tháng 9 này, tớ có điều muốn nói</h1>
+        <p>
+          Chỉ là một buổi tối — dành riêng cho tớ và cậu.
+        </p>
+      </div>
+      <div class="floating-hearts" aria-hidden="true"></div>
+    </header>
+
+   
+    <section id="letter" class="section letter reveal-on-scroll">
+      <h2>Những dòng chưa nói</h2>
+      <div class="typewriter" id="typewriter"></div>
+    </section>
+
+   
+    <section class="section constellation reveal-on-scroll">
+      <h2>Những vì sao dành cho cậu ✨</h2>
+      <p class="sub">
+        Chạm vào các vì sao để bật sáng. Khi đủ hết, một điều
+        sẽ xuất hiện.
+      </p>
+
+      <div class="sky" id="sky" role="img" aria-label="Bầu trời đêm">
+        <svg
+          id="constellationSVG"
+          viewBox="0 0 100 60"
+          preserveAspectRatio="xMidYMid meet"
+        ></svg>
+      </div>
+
+      <div class="progress"><div id="starsProgress" class="bar"></div></div>
+
+      <ul class="likes" id="likesList" aria-live="polite"></ul>
+
+      <p class="reveal" id="constellationReveal" hidden>
+        Khi chòm sao hoàn thành, mình sẽ nói điều đó
+        <strong>trước khi 20/9 đến</strong>. 🌙
+      </p>
+    </section>
+
+    <section id="date" class="section datepick reveal-on-scroll">
+      <div class="date-head">
+        <h2>Chọn một buổi tối trong tháng 9</h2>
+      </div>
+
+      <div class="calendar" id="calendar">
+        <div class="cal-row cal-head">
+          <div>T2</div>
+          <div>T3</div>
+          <div>T4</div>
+          <div>T5</div>
+          <div>T6</div>
+          <div>T7</div>
+          <div>CN</div>
+        </div>
+        <div class="cal-grid" id="calGrid" aria-label="Lịch tháng 9"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Not sure, but still want to try to say ❤</small>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
